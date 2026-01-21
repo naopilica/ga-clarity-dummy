@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dummy Site - Home</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <!-- 後でGA4/Clarityをここに貼る -->
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="https://example.com" target="_blank" rel="noopener" id="outbound">Outbound</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>ダミーサイト</h1>
+    <p>GA4 と Clarity の検証用ページです。</p>
+
+    <section class="card">
+      <h2>テスト用アクション</h2>
+      <div class="grid">
+        <button id="cta_signup">無料で始める</button>
+        <button id="cta_download">資料ダウンロード</button>
+        <button id="cta_search">サイト内検索（ダミー）</button>
+        <button id="cta_error">JSエラー発生（ダミー）</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>フォーム（lead）</h2>
+      <form id="lead_form">
+        <label>メール <input name="email" type="email" required /></label><br/>
+        <label>会社名 <input name="company" type="text" required /></label><br/>
+        <button type="submit">送信<
+
+cat > pricing.html <<'EOF'
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dummy Site - Pricing</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <!-- 後でGA4/Clarityをここに貼る -->
+</head>
+<body>
+  <main class="wrap">
+    <h1>Pricing</h1>
+    <section class="card">
+      <h2>プラン</h2>
+      <button id="buy_basic">Basicを購入（ダミー）</button>
+      <p class="hint">purchaseイベントを送る想定です</p>
+    </section>
+    <a href="in
+
+cat > thanks.html <<'EOF'
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thanks</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <!-- 後でGA4/Clarityをここに貼る -->
+</head>
+<body>
+  <main class="wrap">
+    <h1>送信完了</h1>
+    <p>コンバージョン到達ページです。</p>
+    <a href="index.html">Homeへ</a>
+  </main>
+</body>
+</html>
